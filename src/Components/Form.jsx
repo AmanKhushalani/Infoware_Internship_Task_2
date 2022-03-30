@@ -68,7 +68,7 @@ const Form = () => {
 
     //  this whole container is for form
     return <FormControl id="formControl" >
-        <InputLabel id="cityInput" htmlFor="my-input">Search City</InputLabel>
+        <InputLabel aria-autocomplete="OFF" autocomplete="OFF" id="cityInput" htmlFor="my-input">Search City</InputLabel>
         <Input
             id="cityName"
             name="cityName"
