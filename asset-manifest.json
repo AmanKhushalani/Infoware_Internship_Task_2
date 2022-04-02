@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Infoware_Internship_Task_2/static/css/main.1912b71d.css",
+    "main.js": "/Infoware_Internship_Task_2/static/js/main.3c7b2501.js",
+    "index.html": "/Infoware_Internship_Task_2/index.html",
+    "main.1912b71d.css.map": "/Infoware_Internship_Task_2/static/css/main.1912b71d.css.map",
+    "main.3c7b2501.js.map": "/Infoware_Internship_Task_2/static/js/main.3c7b2501.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1912b71d.css",
+    "static/js/main.3c7b2501.js"
+  ]
+}
