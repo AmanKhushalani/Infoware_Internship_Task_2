@@ -12,15 +12,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#91441f',
         }
     },
     typography: {
-        fontFamily: "Work+Sans",
-        fontWeightLight: 100,
-        fontWeightRegular: 300,
-        fontWeightMedium: 300,
-        fontWeightBold: 400,
+        color: "rgb(144, 202, 249) !important"
     },
     autocomplete: {
         color: "rgb(144, 202, 249) !important"
