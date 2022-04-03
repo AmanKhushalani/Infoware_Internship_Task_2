@@ -5,30 +5,8 @@ import Form from "./Components/Form";
 import Header from "./Components/Header";
 import MyTimeline from "./Components/Timeline";
 import './Styles/index.css'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
-
-const theme = createTheme({
-    palette: {
-        primary: {
-        }
-    },
-    typography: {
-        color: "rgb(144, 202, 249) !important"
-    },
-    autocomplete: {
-        color: "rgb(144, 202, 249) !important"
-    },
-    "& #combo-box-demo": {
-        //or could be targeted through a class
-        innerWidth: "100%",
-        outerWidth: "100%",
-        color: "rgb(144, 202, 249) !important"
-    }
-
-
-});
 
 
 export default function App() {
@@ -38,7 +16,6 @@ export default function App() {
     const [searchedCityName, updateSearchedCityName] = useState("")
 
     return <>
-        <ThemeProvider theme={theme}>
             <CityContext.Provider value={{ searchedCityName, updateSearchedCityName }}>
                 <WeatherContext.Provider value={{ weatherData, updateWeatherData }}>
                     <Header />
@@ -51,7 +28,6 @@ export default function App() {
                     </div>
                 </WeatherContext.Provider>
             </CityContext.Provider>
-        </ThemeProvider>
 
     </>
 
