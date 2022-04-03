@@ -16,7 +16,7 @@ const getCityCode = async (cityname) =>{
 const getForecastDetails = async (cityCode , hours)=>{
 
     const forecast = await axios.get(
-        `http://dataservice.accuweather.com/forecasts/v1/hourly/${hours}hour/${cityCode}?apikey=${apiKey}`
+        `https://dataservice.accuweather.com/forecasts/v1/hourly/${hours}hour/${cityCode}?apikey=${apiKey}`
     )
     
     return forecast.data;
