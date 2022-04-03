@@ -68,13 +68,14 @@ const Form = () => {
 
     //  this whole container is for form
     return <FormControl id="formControl" >
-        <InputLabel aria-autocomplete="OFF" autoComplete="off"  id="cityInput" htmlFor="my-input">Search City</InputLabel>
+        <InputLabel aria-autocomplete="OFF"  id="cityInput" htmlFor="my-input">Search City</InputLabel>
         <Input
             id="cityName"
             name="cityName"
             value={formData.cityName}
             onChange={updateData}
             aria-describedby="my-helper-text"
+            autoComplete="OFF"
         />
 
         <Autocomplete
